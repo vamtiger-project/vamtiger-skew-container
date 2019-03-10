@@ -1,0 +1,1 @@
+export default '<div data-vamtiger-skew-container></div><slot></slot>';

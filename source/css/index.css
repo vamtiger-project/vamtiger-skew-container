@@ -1,0 +1,59 @@
+:host,
+[data-vamtiger-skew-container]
+{
+    display: inline-block;
+}
+
+:host
+{
+    pointer-events:none;
+    filter: drop-shadow(3px 0 3px rgba(0, 0, 0, 0.5));
+}
+
+[data-vamtiger-skew-container]
+{
+    pointer-events:auto;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+}
+
+[data-left]
+{
+    clip-path: polygon(0 0, 35% 0, 20% 100%, 0 100%);
+}
+
+[data-center]
+{
+    clip-path: polygon(35% 0, 80% 0, 65% 100%, 20% 100%);
+}
+
+[data-right]
+{
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 65% 100%);
+}
+
+[data-vamtiger-skew-container]
+{
+    transition: clip-path 375ms;
+}
+
+[data-focus="right"]
+{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+[data-focus="left"]
+{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+[data-hide="right"]
+{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+[data-hide="left"]
+{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}

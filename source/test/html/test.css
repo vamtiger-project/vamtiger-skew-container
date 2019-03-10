@@ -1,0 +1,32 @@
+.container
+{
+    overflow: hidden;
+}
+
+.container
+{
+    width: 50vw;
+    height: 30vh;
+    position: relative;
+    display: grid;
+}
+
+vamtiger-skew-container
+{
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+vamtiger-skew-container
+{
+    position: absolute;
+    left: 0;
+}
+
+vamtiger-skew-container [data-url-template]
+{
+    width: 100%;
+    height: 100%;
+}
