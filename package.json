@@ -1,13 +1,13 @@
 {
     "name": "vamtiger-skew-container",
-    "version": "0.0.6",
+    "version": "0.1.0",
     "description": "VAMTIGER Web Component with dynamically adjustable skew.",
     "main": "build",
     "scripts": {
         "test": "npm run clean && npm run build && npm run bundle-node-test && npm run bundle-browser-test && npm run mocha && npm run bundle-source",
         "mocha": "mocha build/test/node --recursive",
         "build": "tsc",
-        "commit": "npm run bundle && vamtiger-node-typescript-commit --push --publish --buildScript bundle",
+        "commit": "npm run bundle && vamtiger-node-typescript-commit --push --publish --buildScript bundle --publishSource",
         "clean-bundle": "vamtiger-remove -d build -p \"(vamtiger-skew-container).(js(.map)?|d.ts)\"",
         "clean": "rm -rf build/*",
         "clean-install": "rm -rf package-lock.json node_modules && npm i",
