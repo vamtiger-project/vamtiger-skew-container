@@ -52,8 +52,6 @@ export default class VamtigerSkewContainer extends HTMLElement {
             container.dataset.left = nothing;
         } else if (dataset.hasOwnProperty(DataAttribute.center) && container) {
             container.dataset.center = nothing;
-        } else if (dataset.hasOwnProperty(DataAttribute.verticalRightUp) && container) {
-            container.dataset.verticalRightUp = nothing;
         }
 
         if (container) {
