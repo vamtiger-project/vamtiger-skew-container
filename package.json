@@ -1,6 +1,6 @@
 {
     "name": "vamtiger-skew-container",
-    "version": "0.3.1",
+    "version": "0.4.0",
     "description": "VAMTIGER Web Component with dynamically adjustable skew.",
     "main": "build",
     "scripts": {
