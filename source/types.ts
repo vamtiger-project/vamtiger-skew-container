@@ -21,6 +21,7 @@ export enum DataAttribute {
     hide = 'hide',
     right = 'right',
     left = 'left',
+    verticalRightUp = 'verticalRightUp',
     center = 'center',
     template = 'template',
     templateSelector = 'templateSelector'
