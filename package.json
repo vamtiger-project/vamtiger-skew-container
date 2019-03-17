@@ -1,6 +1,6 @@
 {
     "name": "vamtiger-skew-container",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "description": "VAMTIGER Web Component with dynamically adjustable skew.",
     "main": "build",
     "scripts": {
@@ -27,7 +27,7 @@
         "watch": "vamtiger-watch --folder source --extension ts --script test --extension html --script bundle-html --extension css --script bundle-css",
         "serve": "npm run test && cd build && python -m SimpleHTTPServer",
         "install-source": "npm i --save-dev vamtiger-browser-method@source",
-        "postinstall": "vamtiger-postinstall --distTag source"
+        "postinstall": "vamtiger-postinstall --distTag source; npm run install-source"
     },
     "keywords": [
         "vamtiger",
